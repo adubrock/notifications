@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Airship Notifications</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script type="text/javascript">
+    // 86acbd31cd7c09cf30acb66d2fbedc91daa48b86:1521521391.3
+    !function(n,t,c,e,u){function r(n){try{f=n(u)}catch(n){return h=n,void i(p,n)}i(s,f)}function i(n,t){for(var c=0;c<n.length;c++)d(n[c],t);
+    }function o(n,t){return n&&(f?d(n,f):s.push(n)),t&&(h?d(t,h):p.push(t)),l}function a(n){return o(!1,n)}function d(t,c){
+    n.setTimeout(function(){t(c)},0)}var f,h,s=[],p=[],l={then:o,catch:a,_setup:r};n[e]=l;var v=t.createElement("script");
+    v.src=c,v.async=!0,v.id="_uasdk",v.rel=e,t.head.appendChild(v)}(window,document,'https://web-sdk.urbanairship.com/notify/v1/ua-sdk.min.js',
+      'UA', {
+        appKey: 'rkOT1QWDSDKLjUV3qytVfQ',
+        token: 'MTpya09UMVFXRFNES0xqVVYzcXl0VmZROkw1TFR3b2RrVnh6bHNaZDVjaWdUaVdMOWY2WklqSWM5aHpSd19xNDhBM1U',
+        vapidPublicKey: 'BEczXifCdkloJcUn71OFhAc6_CW2zueGGaj_eWKaA4WRi7Z3pm9eMM8RwKwzOVO_tEKahmVLM_U6DQgGN1uJAYE='
+      });
+
+    </script>
+  </head>
+  <body>
+    <h1>
+      Welcome to the Urban Airship Web Notifications Demo!
+    </h1>
+    <button id="register">Sign up for notifications</button>
+    <script>
+    document.getElementById('register').addEventListener('click', function(){
+      UA.then(function(sdk) {
+        sdk.register()
+     })
+   })
+   </script>
+  </body>
+</html>
